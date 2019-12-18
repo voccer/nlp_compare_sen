@@ -1,1 +1,2 @@
-# nlp_compare_sen
+pip install -r requirements.txt
+flask run
