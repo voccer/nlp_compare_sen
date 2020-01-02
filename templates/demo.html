@@ -19,7 +19,7 @@
             <div class="col-lg-12">
                 <h3 class="text-info text-center"><u>Nhóm 9</u></h3>
                 <div class="font-italic text-center">
-                    <span style="">Nguyễn Trọng Đức</span>
+                    <span>Nguyễn Trọng Đức</span>
                     <i class="fa fa-circle fa-xs"></i>
                     <span>Trần Huy Hùng</span>
                     <i class="fa fa-circle fa-xs"></i>
@@ -43,7 +43,7 @@
             </div>
             <div class="col-lg-2 text-center">
                 <i class="fa fa-question fa-7x text-warning" id="ans"></i>
-                <div class="form-group m-1">
+                <div class="form-group m-1" id='diem' style="display: none;">
                     <label for="score" class="text-info font-weight-bold">Điểm:</label>
                     <input id="score" type="number" min="0" max="5" step="0.1" readonly>
                 </div>
@@ -77,13 +77,13 @@
 </div>
 
 <script>
-$('#my_form').submit( function (e) {
+$('#my_form').submit(function (e) {
     e.preventDefault();
 
     let text1 = $.trim($('#text1').val());
     let text2 = $.trim($('#text2').val());
     let threshold = $('#threshold').val();
-
+    
     const $ans = $('#ans');
     $('.spinner-border').show();
 
@@ -110,7 +110,8 @@ $('#my_form').submit( function (e) {
                     $ans.toggleClass('fa-not-equal text-danger fa-equals text-success');
             }
         }
-    })
+    });
+    $('#diem').show('slow');
 });
 </script>
 
