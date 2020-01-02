@@ -10,4 +10,4 @@ Nhóm 9 - Xử lý Ngôn ngữ tự nhiên
 ``` pip install -r requirenments.txt ``` <br>
 ``` flask run ``` (đảm bảo port 5000 của localhost chưa được sử dụng)
 
--- Truy cập trình duyệt vào đường link <code>localhost:5000</code>
+Truy cập trình duyệt vào đường link <code>localhost:5000</code>
